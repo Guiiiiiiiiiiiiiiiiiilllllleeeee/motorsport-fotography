@@ -5,7 +5,7 @@ Written by: 	Okler Themes - (http://www.okler.net)
 Theme Version:	12.0.0
 */
 
-namespace PortoContactForm;
+namespace MotorsportContactForm;
 
 ini_set('allow_url_fopen', true);
 

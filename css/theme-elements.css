@@ -10770,7 +10770,7 @@ h6.text-shadow {
 	line-height: 39px;
 }
 
-/* Porto Icons */
+/* Motorsport Icons */
 i.pi {
 	position: relative;
 	display: inline-flex;
@@ -10780,7 +10780,7 @@ i.pi {
 	font-size: 14px;
 }
 
-i.pi.pi-porto-brand:before {
+i.pi.pi-Motorsport-brand:before {
 	content: '\f111';
 	font-family: 'Font Awesome 6 Free';
 	font-weight: bold;
@@ -10789,7 +10789,7 @@ i.pi.pi-porto-brand:before {
 	padding: 1.2em;
 }
 
-i.pi.pi-porto-brand:after {
+i.pi.pi-Motorsport-brand:after {
 	content: '';
 	width: 2em;
 	height: 2em;
@@ -13365,8 +13365,8 @@ Credits: Codyhouse (https://codyhouse.co/gem/360-degrees-product-viewer)
 	color: inherit;
 }
 
-/* PORTO Big Title */
-.porto-big-title {
+/* Motorsport Big Title */
+.Motorsport-big-title {
 	letter-spacing: -22px;
 	font-size: 144px;
 	font-size: 9rem;
@@ -13374,7 +13374,7 @@ Credits: Codyhouse (https://codyhouse.co/gem/360-degrees-product-viewer)
 }
 
 @media (max-width: 575px) {
-	.porto-big-title {
+	.Motorsport-big-title {
 		letter-spacing: -18px;
 		font-size: 7rem;
 	}

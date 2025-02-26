@@ -451,7 +451,7 @@ window.theme.fn = {
 		init() {
 			const self = this;
 
-			if( !$.cookie('portoNoticeTopBarClose') ) {
+			if( !$.cookie('MotorsportNoticeTopBarClose') ) {
 				self
 					.build()
 					.events();
@@ -525,7 +525,7 @@ window.theme.fn = {
 		checkCookie() {
 			const self = this;
 
-			if( $.cookie('portoNoticeTopBarClose') ) {
+			if( $.cookie('MotorsportNoticeTopBarClose') ) {
 				return true;
 			} else {
 				return false;
@@ -536,7 +536,7 @@ window.theme.fn = {
 		saveCookie() {
 			const self = this;
 
-			$.cookie('portoNoticeTopBarClose', true);
+			$.cookie('MotorsportNoticeTopBarClose', true);
 
 			return this;
 		}
@@ -3174,15 +3174,15 @@ window.theme.fn = {
 			const self = this;
 
 			// Show
-			if( !$.cookie( 'porto-privacy-bar' ) ) {
+			if( !$.cookie( 'Motorsport-privacy-bar' ) ) {
 				setTimeout(() => {
 					self.options.wrapper.addClass('show');
 				}, self.options.cookieBarShowDelay);
 			}
 
 			// If already has preferences cookie, check inputs according preferences cookie data
-			if( $.cookie( 'porto-gdpr-preferences' ) ) {
-				const preferencesArr = $.cookie( 'porto-gdpr-preferences' ).split(',');
+			if( $.cookie( 'Motorsport-gdpr-preferences' ) ) {
+				const preferencesArr = $.cookie( 'Motorsport-gdpr-preferences' ).split(',');
 
 				for( let i = 0; i < preferencesArr.length; i++ ) {
 					if( $('input[value="'+ preferencesArr[i] +'"]').get(0) ) {
@@ -3253,7 +3253,7 @@ window.theme.fn = {
 					}
 				});
 
-				$.cookie( 'porto-privacy-bar', true, {expires: self.options.expires} );
+				$.cookie( 'Motorsport-privacy-bar', true, {expires: self.options.expires} );
 
 				setTimeout(() => {
 					$this.find('button[type="submit"]').text( 'SAVED!' ).removeClass('btn-primary').addClass('btn-success');
@@ -3264,14 +3264,14 @@ window.theme.fn = {
 
 						$this.find('button[type="submit"]').text( 'SAVE PREFERENCES' ).removeClass('btn-success').addClass('btn-primary');
 
-						if( $.cookie( 'porto-gdpr-preferences' ) ) {
+						if( $.cookie( 'Motorsport-gdpr-preferences' ) ) {
 
-							$.cookie( 'porto-gdpr-preferences', formData, {expires: self.options.expires} );
+							$.cookie( 'Motorsport-gdpr-preferences', formData, {expires: self.options.expires} );
 							location.reload();
 
 						} else {
 
-							$.cookie( 'porto-gdpr-preferences', formData, {expires: self.options.expires} );
+							$.cookie( 'Motorsport-gdpr-preferences', formData, {expires: self.options.expires} );
 
 							if ($.isFunction($.fn['themePluginGDPRWrapper']) && $('[data-plugin-gdpr-wrapper]').length) {
 
@@ -3332,8 +3332,8 @@ window.theme.fn = {
         clearCookies() {
 			const self = this;
 
-			$.removeCookie( 'porto-privacy-bar' );
-			$.removeCookie( 'porto-gdpr-preferences' );
+			$.removeCookie( 'Motorsport-privacy-bar' );
+			$.removeCookie( 'Motorsport-gdpr-preferences' );
 
 			return this;
 		}
@@ -3403,7 +3403,7 @@ window.theme.fn = {
         build() {
 			const self = this;
 
-			if( $.cookie( 'porto-gdpr-preferences' ) && $.cookie( 'porto-gdpr-preferences' ).includes(self.options.checkCookie) ) {
+			if( $.cookie( 'Motorsport-gdpr-preferences' ) && $.cookie( 'Motorsport-gdpr-preferences' ).includes(self.options.checkCookie) ) {
 
 				$.ajax({
 					url: self.options.ajaxURL,

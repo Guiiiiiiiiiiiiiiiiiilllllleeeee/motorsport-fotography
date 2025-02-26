@@ -6,11 +6,11 @@ Theme Version:	12.0.0
 
 (($ => {
     /*
-    * Add "active" class to animate Custom Porto SVG Logo
+    * Add "active" class to animate Custom Motorsport SVG Logo
     */
     $(window).on('load', () => {
         setTimeout(() => {
-            $('.custom-porto-svg-logo').addClass('active');
+            $('.custom-Motorsport-svg-logo').addClass('active');
         }, 1000);
     });
 
