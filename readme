@@ -1,0 +1,91 @@
+# Fotografía Motorsport - Página Web
+
+Este es un proyecto de página web para un fotógrafo especializado en motorsport. La web permitirá a los usuarios explorar su portafolio, conocer más sobre el fotógrafo, y contactarlo para contratar sus servicios.
+
+## Historias de Usuario
+
+### Historia de Usuario 1: Visualizar las fotos
+**Como visitante de la página web, quiero ver las fotos del portafolio del fotógrafo, para disfrutar de su trabajo y decidir si me interesa contratarlo.**
+
+**Criterios de aceptación:**
+- Las fotos deben ser de alta calidad, con tiempos de carga rápidos (optimizadas para la web).
+- El portafolio debe estar organizado de manera visualmente atractiva, con un diseño limpio y ordenado.
+- Cada imagen debe tener una descripción o etiqueta relevante (por ejemplo, el nombre del evento, tipo de automóvil, fecha, etc.), visible al hacer hover sobre la imagen o al hacer clic en ella.
+
+---
+
+### Historia de Usuario 2: Navegar por el menú
+**Como visitante de la página web, quiero navegar por un menú intuitivo, para acceder fácilmente a las diferentes secciones del sitio web (Inicio, Sobre mí, Portafolio, Contacto).**
+
+**Criterios de aceptación:**
+- El menú debe estar claramente visible en todas las páginas y ser fijo o accesible desde cualquier parte del sitio.
+- Los elementos del menú deben ser fácilmente accesibles y responsivos (adaptados a dispositivos móviles), con una disposición adecuada en dispositivos pequeños (como un menú tipo hamburguesa).
+- Al hacer clic en un enlace del menú, la página correspondiente debe cargarse sin problemas y de manera rápida.
+
+---
+
+### Historia de Usuario 3: Ver una presentación de fotos
+**Como visitante de la página web, quiero ver una presentación de fotos (slider) al ingresar, para obtener una vista rápida de las mejores imágenes del fotógrafo.**
+
+**Criterios de aceptación:**
+- La presentación debe ser visualmente atractiva y cambiar de imagen automáticamente con un intervalo ajustable.
+- Cada imagen del slider debe estar acompañada de un texto descriptivo (por ejemplo, el nombre del evento, la ubicación, etc.), que se muestre de forma clara.
+- El slider debe funcionar correctamente en todos los dispositivos y ser responsivo (adaptarse a diferentes tamaños de pantalla).
+
+---
+
+### Historia de Usuario 4: Conocer más sobre el fotógrafo
+**Como visitante de la página web, quiero saber más sobre el fotógrafo, para entender su experiencia y enfoque profesional.**
+
+**Criterios de aceptación:**
+- La sección "Sobre mí" debe incluir una breve biografía, detalles sobre el enfoque del fotógrafo y su experiencia en el motorsport (como años de experiencia, tipos de eventos cubiertos, etc.).
+- La información debe ser clara, concisa y fácil de leer.
+- La sección debe contener imágenes o ejemplos que muestren al fotógrafo en acción o trabajando en eventos.
+
+---
+
+### Historia de Usuario 5: Contactar con el fotógrafo
+**Como visitante de la página web, quiero tener la opción de contactar al fotógrafo, para solicitar más información o contratar sus servicios.**
+
+**Criterios de aceptación:**
+- La sección de contacto debe incluir un formulario de contacto funcional que permita enviar mensajes al fotógrafo.
+- También debe haber enlaces a las redes sociales del fotógrafo para contacto adicional y para seguir su trabajo.
+- El formulario debe solicitar nombre, correo electrónico, mensaje y una opción para especificar el servicio requerido (por ejemplo: "Cobertura de evento", "Sesión de fotos privada", etc.).
+
+---
+
+### Historia de Usuario 6: Acceder a un portafolio categorizado
+**Como visitante de la página web, quiero explorar las fotos organizadas por categorías, para poder ver el tipo de fotos que más me interesan, como fotos de eventos, coches, y otros.**
+
+**Criterios de aceptación:**
+- El portafolio debe tener categorías claras y fáciles de encontrar (por ejemplo, "Eventos", "Coches", "Carreras").
+- Al hacer clic en una categoría, solo se deben mostrar las fotos de esa categoría y permitir navegar por ellas sin confusión.
+- Las fotos deben ser visualmente atractivas, de alta calidad y bien organizadas dentro de cada categoría.
+
+---
+
+### Historia de Usuario 7: Cambiar el estilo de la página
+**Como visitante de la página web, quiero poder cambiar el estilo de la página, para ajustar la apariencia según mis preferencias (colores, tema).**
+
+**Criterios de aceptación:**
+- El sitio debe permitir a los usuarios cambiar entre varios estilos predefinidos (por ejemplo, un tema oscuro y un tema claro).
+- La opción de cambio de estilo debe ser fácil de encontrar y usar, y debe ser accesible desde cualquier página del sitio.
+- Los cambios de estilo deben aplicarse de manera inmediata y no afectar la funcionalidad del sitio.
+
+---
+
+## Tecnologías utilizadas
+
+- **HTML5** - Para la estructura del sitio web.
+- **CSS3 (Tailwind CSS)** - Para el diseño y estilos de la página.
+- **JavaScript** - Para la interactividad, como el funcionamiento del slider y la carga dinámica de contenido.
+- **PHP** - Para el manejo del formulario de contacto (si se requiere backend).
+- **Responsive Design** - Asegurando que la web sea completamente funcional en dispositivos móviles.
+
+---
+
+## Instalación
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/usuario/fotografia-motorsport.git
