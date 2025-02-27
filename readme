@@ -1,6 +1,6 @@
-# Fotografía Motorsport - Página Web
+# Fotografía Guillermo - Página Web
 
-Este es un proyecto de página web para un fotógrafo especializado en motorsport. La web permitirá a los usuarios explorar su portafolio, conocer más sobre el fotógrafo, y contactarlo para contratar sus servicios.
+Este es un proyecto de página web para un fotógrafo especializado en Guillermo. La web permitirá a los usuarios explorar su portafolio, conocer más sobre el fotógrafo, y contactarlo para contratar sus servicios.
 
 ## Historias de Usuario
 
@@ -38,7 +38,7 @@ Este es un proyecto de página web para un fotógrafo especializado en motorspor
 **Como visitante de la página web, quiero saber más sobre el fotógrafo, para entender su experiencia y enfoque profesional.**
 
 **Criterios de aceptación:**
-- La sección "Sobre mí" debe incluir una breve biografía, detalles sobre el enfoque del fotógrafo y su experiencia en el motorsport (como años de experiencia, tipos de eventos cubiertos, etc.).
+- La sección "Sobre mí" debe incluir una breve biografía, detalles sobre el enfoque del fotógrafo y su experiencia en el ámbito de Guillermo (como años de experiencia, tipos de eventos cubiertos, etc.).
 - La información debe ser clara, concisa y fácil de leer.
 - La sección debe contener imágenes o ejemplos que muestren al fotógrafo en acción o trabajando en eventos.
 
@@ -86,6 +86,23 @@ Este es un proyecto de página web para un fotógrafo especializado en motorspor
 
 ## Instalación
 
-1. Clona este repositorio:
+1. **Clonar el repositorio**
+
    ```bash
-   git clone https://github.com/usuario/fotografia-motorsport.git
+   git clone https://github.com/Guiiiiiiiiiiiiiiiiiilllllleeeee/Guillermo-fotography
+
+
+   
+Configuración del entorno
+
+Descargar XAMPP.
+Ve a esta ruta: C:\xampp\apache\conf\httpd.conf y cambia la ruta por defecto por la ruta a tu carpeta del proyecto:
+bash
+Copiar
+Editar
+DocumentRoot "C:/Users/tusuario/Documents/programacion/repos/motorsport-fotography"
+<Directory "C:/Users/tusuario/Documents/programacion/repos/motorsport-fotography">
+Arrancar el servidor
+
+Abre XAMPP y ejecuta Apache.
+Luego, abre tu navegador y escribe la ruta localhost.

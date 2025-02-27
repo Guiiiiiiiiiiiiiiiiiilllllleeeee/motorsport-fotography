@@ -5,7 +5,7 @@ Written by: 	Okler Themes - (http://www.okler.net)
 Theme Version:	12.0.0
 */
 
-namespace MotorsportContactForm;
+namespace GuillermoContactForm;
 
 session_cache_limiter('nocache');
 header('Expires: ' . gmdate('r', 0));
