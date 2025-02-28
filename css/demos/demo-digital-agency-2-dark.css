@@ -532,9 +532,9 @@ html.mobile-menu-opened.sticky-header-active #header.header-transparent .header-
 }
 
 /*
-* About Us Featured Block
+* About me Us Featured Block
 */
-.about-us-featured-block {
+.About me-us-featured-block {
 		position: absolute;
 		z-index: 1;
 		top: -50%;
@@ -542,7 +542,7 @@ html.mobile-menu-opened.sticky-header-active #header.header-transparent .header-
 }
 
 @media (max-width: 1199px) {
-		.about-us-featured-block {
+		.About me-us-featured-block {
 				position: static;
 				transform: translate(0);
 		}

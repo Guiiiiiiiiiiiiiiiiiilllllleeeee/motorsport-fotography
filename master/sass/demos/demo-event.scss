@@ -73,40 +73,40 @@ h3 {
 	}
 }
 
-// Custom Row About
-.custom-row-about {
+// Custom Row About me
+.custom-row-About me {
 	.col-12 {
 		height: 520px;
 	}
 }
 
 // Column
-.custom-col-about-bg {
+.custom-col-About me-bg {
 	height: 520px;
 	background-size: auto;
 	background-position: 100% 0;
 }
 
 @media (max-width: 991px) {
-	.custom-col-about-bg {
+	.custom-col-About me-bg {
 		background-size: cover;
 	}	
 }
 
 @media (max-width: 991px) {
-	.custom-col-about-carousel {
+	.custom-col-About me-carousel {
 		height: auto !important;
 	}
 }
 
-.custom-col-about-bg-text,
-.custom-about-play-icon {
+.custom-col-About me-bg-text,
+.custom-About me-play-icon {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 }
 
-.custom-about-play-icon {
+.custom-About me-play-icon {
 	left: 50%;
 	transform: translate(50%,-50%);
 	margin: 0 0 0 -62px;

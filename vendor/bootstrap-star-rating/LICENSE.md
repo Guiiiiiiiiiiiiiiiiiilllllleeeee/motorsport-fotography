@@ -1,6 +1,6 @@
 Copyright (c) 2013 - 2021, Kartik Visweswaran   
 Krajee.com  
-All rights reserved.  
+Derechos reservados.  
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:

@@ -5,10 +5,10 @@ Theme Version:	12.0.0
 */
 
 (($ => {
-    // About Me
-    $('#aboutMeMoreBtn').on('click', function() {
+    // About me Me
+    $('#About meMeMoreBtn').on('click', function() {
 		$(this).hide();
-		$('#aboutMeMore').toggleClass('about-me-more-visible');
+		$('#About meMeMore').toggleClass('About me-me-more-visible');
 		return false;
 	});
 

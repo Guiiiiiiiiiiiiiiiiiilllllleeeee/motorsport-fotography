@@ -289,9 +289,9 @@ body {
 }
 
 /*
-* About Me
+* About me Me
 */
-.more-about {
+.more-About me {
 	background-color: var(--light);
 	background-position-y: center;
 	background-repeat: no-repeat;
@@ -316,7 +316,7 @@ body {
 
 	@media (min-width: 992px) {
 
-		.col-cuttin-more-about:before {
+		.col-cuttin-more-About me:before {
 			content: '';
 			position: absolute;
 			top: -35%;
@@ -333,7 +333,7 @@ body {
 			}
 		}
 		
-		.col-cuttin-more-about:after {
+		.col-cuttin-more-About me:after {
 			content: '';
 			position: absolute;
 			top: 35%;
@@ -356,12 +356,12 @@ body {
 
 		background-size: 130%;
 
-		.col-cuttin-more-about:before {
+		.col-cuttin-more-About me:before {
 			right: -127%;
 			top: -38%;
 		}
 		
-		.col-cuttin-more-about:after {
+		.col-cuttin-more-About me:after {
 			right: -127%;
 			top: 38%;
 		}
