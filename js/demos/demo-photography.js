@@ -93,7 +93,7 @@ theme.PluginScrollToTop.initialize = () => {};
 		sliderOptions.navigation.arrows.right.h_offset = 20;
 	}
 
-    if( $('.rev_about_us').get(0) ) {
+    if( $('.rev_About me_us').get(0) ) {
 		sliderOptions.navigation.mouseScrollNavigation = false;
 	}
 

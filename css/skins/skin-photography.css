@@ -6,74 +6,74 @@
 }
 /* Skin Colors */
 :root {
-	--primary: #242E39;
-	--primary-100: #1a2129;
-	--primary-200: #151b22;
-	--primary-300: #10151a;
-	--primary--100: #2e3b49;
-	--primary--200: #334150;
-	--primary--300: #384758;
-	--primary-rgba-0: rgba(36, 46, 57, 0);
-	--primary-rgba-10: rgba(36, 46, 57, 0.1);
-	--primary-rgba-20: rgba(36, 46, 57, 0.2);
-	--primary-rgba-30: rgba(36, 46, 57, 0.3);
-	--primary-rgba-40: rgba(36, 46, 57, 0.4);
-	--primary-rgba-50: rgba(36, 46, 57, 0.5);
-	--primary-rgba-60: rgba(36, 46, 57, 0.6);
-	--primary-rgba-70: rgba(36, 46, 57, 0.7);
-	--primary-rgba-80: rgba(36, 46, 57, 0.8);
-	--primary-rgba-90: rgba(36, 46, 57, 0.9);
-	--secondary: #45586d;
-	--secondary-100: #3b4b5d;
-	--secondary-200: #364556;
-	--secondary-300: #313f4e;
-	--secondary--100: #4f657d;
-	--secondary--200: #546b84;
-	--secondary--300: #59718c;
-	--secondary-rgba-0: rgba(69, 88, 109, 0);
-	--secondary-rgba-10: rgba(69, 88, 109, 0.1);
-	--secondary-rgba-20: rgba(69, 88, 109, 0.2);
-	--secondary-rgba-30: rgba(69, 88, 109, 0.3);
-	--secondary-rgba-40: rgba(69, 88, 109, 0.4);
-	--secondary-rgba-50: rgba(69, 88, 109, 0.5);
-	--secondary-rgba-60: rgba(69, 88, 109, 0.6);
-	--secondary-rgba-70: rgba(69, 88, 109, 0.7);
-	--secondary-rgba-80: rgba(69, 88, 109, 0.8);
-	--secondary-rgba-90: rgba(69, 88, 109, 0.9);
-	--tertiary: #EF4343;
-	--tertiary-100: #ed2b2b;
-	--tertiary-200: #ec2020;
-	--tertiary-300: #eb1414;
-	--tertiary--100: #f15b5b;
-	--tertiary--200: #f26666;
-	--tertiary--300: #f37272;
-	--tertiary-rgba-0: rgba(239, 67, 67, 0);
-	--tertiary-rgba-10: rgba(239, 67, 67, 0.1);
-	--tertiary-rgba-20: rgba(239, 67, 67, 0.2);
-	--tertiary-rgba-30: rgba(239, 67, 67, 0.3);
-	--tertiary-rgba-40: rgba(239, 67, 67, 0.4);
-	--tertiary-rgba-50: rgba(239, 67, 67, 0.5);
-	--tertiary-rgba-60: rgba(239, 67, 67, 0.6);
-	--tertiary-rgba-70: rgba(239, 67, 67, 0.7);
-	--tertiary-rgba-80: rgba(239, 67, 67, 0.8);
-	--tertiary-rgba-90: rgba(239, 67, 67, 0.9);
-	--quaternary: #182027;
-	--quaternary-100: #0e1317;
-	--quaternary-200: #090d0f;
-	--quaternary-300: #050607;
-	--quaternary--100: #222d37;
-	--quaternary--200: #27333f;
-	--quaternary--300: #2b3a47;
-	--quaternary-rgba-0: rgba(24, 32, 39, 0);
-	--quaternary-rgba-10: rgba(24, 32, 39, 0.1);
-	--quaternary-rgba-20: rgba(24, 32, 39, 0.2);
-	--quaternary-rgba-30: rgba(24, 32, 39, 0.3);
-	--quaternary-rgba-40: rgba(24, 32, 39, 0.4);
-	--quaternary-rgba-50: rgba(24, 32, 39, 0.5);
-	--quaternary-rgba-60: rgba(24, 32, 39, 0.6);
-	--quaternary-rgba-70: rgba(24, 32, 39, 0.7);
-	--quaternary-rgba-80: rgba(24, 32, 39, 0.8);
-	--quaternary-rgba-90: rgba(24, 32, 39, 0.9);
+	--primary: #267365;
+	--primary-100: #206054;
+	--primary-200: #1c564c;
+	--primary-300: #194d43;
+	--primary--100: #2c8676;
+	--primary--200: #30907e;
+	--primary--300: #339987;
+	--primary-rgba-0: rgba(38, 115, 101, 0);
+	--primary-rgba-10: rgba(38, 115, 101, 0.1);
+	--primary-rgba-20: rgba(38, 115, 101, 0.2);
+	--primary-rgba-30: rgba(38, 115, 101, 0.3);
+	--primary-rgba-40: rgba(38, 115, 101, 0.4);
+	--primary-rgba-50: rgba(38, 115, 101, 0.5);
+	--primary-rgba-60: rgba(38, 115, 101, 0.6);
+	--primary-rgba-70: rgba(38, 115, 101, 0.7);
+	--primary-rgba-80: rgba(38, 115, 101, 0.8);
+	--primary-rgba-90: rgba(38, 115, 101, 0.9);
+	--secondary: #F2CB05;
+	--secondary-100: #d9b604;
+	--secondary-200: #cdac04;
+	--secondary-300: #c0a104;
+	--secondary--100: #fad516;
+	--secondary--200: #fad723;
+	--secondary--300: #fbd92f;
+	--secondary-rgba-0: rgba(242, 203, 5, 0);
+	--secondary-rgba-10: rgba(242, 203, 5, 0.1);
+	--secondary-rgba-20: rgba(242, 203, 5, 0.2);
+	--secondary-rgba-30: rgba(242, 203, 5, 0.3);
+	--secondary-rgba-40: rgba(242, 203, 5, 0.4);
+	--secondary-rgba-50: rgba(242, 203, 5, 0.5);
+	--secondary-rgba-60: rgba(242, 203, 5, 0.6);
+	--secondary-rgba-70: rgba(242, 203, 5, 0.7);
+	--secondary-rgba-80: rgba(242, 203, 5, 0.8);
+	--secondary-rgba-90: rgba(242, 203, 5, 0.9);
+	--tertiary: #F29F05;
+	--tertiary-100: #d98f04;
+	--tertiary-200: #cd8604;
+	--tertiary-300: #c07e04;
+	--tertiary--100: #faaa16;
+	--tertiary--200: #faaf23;
+	--tertiary--300: #fbb32f;
+	--tertiary-rgba-0: rgba(242, 159, 5, 0);
+	--tertiary-rgba-10: rgba(242, 159, 5, 0.1);
+	--tertiary-rgba-20: rgba(242, 159, 5, 0.2);
+	--tertiary-rgba-30: rgba(242, 159, 5, 0.3);
+	--tertiary-rgba-40: rgba(242, 159, 5, 0.4);
+	--tertiary-rgba-50: rgba(242, 159, 5, 0.5);
+	--tertiary-rgba-60: rgba(242, 159, 5, 0.6);
+	--tertiary-rgba-70: rgba(242, 159, 5, 0.7);
+	--tertiary-rgba-80: rgba(242, 159, 5, 0.8);
+	--tertiary-rgba-90: rgba(242, 159, 5, 0.9);
+	--quaternary: #F28705;
+	--quaternary-100: #d97904;
+	--quaternary-200: #cd7204;
+	--quaternary-300: #c06b04;
+	--quaternary--100: #fa9316;
+	--quaternary--200: #fa9923;
+	--quaternary--300: #fb9f2f;
+	--quaternary-rgba-0: rgba(242, 135, 5, 0);
+	--quaternary-rgba-10: rgba(242, 135, 5, 0.1);
+	--quaternary-rgba-20: rgba(242, 135, 5, 0.2);
+	--quaternary-rgba-30: rgba(242, 135, 5, 0.3);
+	--quaternary-rgba-40: rgba(242, 135, 5, 0.4);
+	--quaternary-rgba-50: rgba(242, 135, 5, 0.5);
+	--quaternary-rgba-60: rgba(242, 135, 5, 0.6);
+	--quaternary-rgba-70: rgba(242, 135, 5, 0.7);
+	--quaternary-rgba-80: rgba(242, 135, 5, 0.8);
+	--quaternary-rgba-90: rgba(242, 135, 5, 0.9);
 	--dark: #212529;
 	--dark-100: #16181b;
 	--dark-200: #101214;
@@ -112,8 +112,8 @@
 /* Skin Colors - Inverse */
 :root {
 	--primary-inverse: #FFF;
-	--secondary-inverse: #FFF;
-	--tertiary-inverse: #FFF;
+	--secondary-inverse: #777;
+	--tertiary-inverse: #777;
 	--quaternary-inverse: #FFF;
 	--dark-inverse: #FFF;
 	--light-inverse: #777;
@@ -131,4 +131,47 @@
 	--grey-800: #a8a8a8;
 	--grey-900: #8e8e8e;
 	--grey-1000: #757575;
+}
+
+.less-error-message ul, .less-error-message li {
+	list-style-type: none;
+	margin-right: 15px;
+	padding: 4px 0;
+	margin: 0;
+}
+
+.less-error-message label {
+	font-size: 12px;
+	margin-right: 15px;
+	padding: 4px 0;
+	color: #cc7777;
+}
+
+.less-error-message pre {
+	color: #dd6666;
+	padding: 4px 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.less-error-message pre.line {
+	color: #ff0000;
+}
+
+.less-error-message h3 {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 15px 0 5px 0;
+	margin: 0;
+}
+
+.less-error-message a {
+	color: #10a;
+}
+
+.less-error-message .error {
+	color: red;
+	font-weight: bold;
+	padding-bottom: 2px;
+	border-bottom: 1px dashed red;
 }

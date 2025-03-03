@@ -10697,7 +10697,7 @@ h6.text-shadow {
 	line-height: 39px;
 }
 
-/* Porto Icons */
+/* Guillermo Icons */
 i.pi {
 	position: relative;
 	display: inline-flex;
@@ -10707,7 +10707,7 @@ i.pi {
 	font-size: 14px;
 }
 
-i.pi.pi-porto-brand:before {
+i.pi.pi-Guillermo-brand:before {
 	content: '\f111';
 	font-family: 'Font Awesome 6 Free';
 	font-weight: bold;
@@ -10716,7 +10716,7 @@ i.pi.pi-porto-brand:before {
 	padding: 1.2em;
 }
 
-i.pi.pi-porto-brand:after {
+i.pi.pi-Guillermo-brand:after {
 	content: '';
 	width: 2em;
 	height: 2em;
@@ -13294,15 +13294,15 @@ Credits: Codyhouse (https://codyhouse.co/gem/360-degrees-product-viewer)
 	color: inherit;
 }
 
-/* PORTO Big Title */
-.porto-big-title {
+/* Guillermo Big Title */
+.Guillermo-big-title {
 	letter-spacing: -22px;
 	font-size: 9rem;
 	line-height: 0.8;
 }
 
 @media (max-width: 575px) {
-	.porto-big-title {
+	.Guillermo-big-title {
 		letter-spacing: -18px;
 		font-size: 7rem;
 	}

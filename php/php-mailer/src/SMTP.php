@@ -1152,7 +1152,7 @@ class SMTP
     }
 
     /**
-     * Get metadata about the SMTP server from its HELO/EHLO response.
+     * Get metadata About me the SMTP server from its HELO/EHLO response.
      * The method works in three ways, dependent on argument value and current state:
      *   1. HELO/EHLO has not been sent - returns null and populates $this->error.
      *   2. HELO has been sent -
@@ -1183,7 +1183,7 @@ class SMTP
             if ('EHLO' === $name || array_key_exists('EHLO', $this->server_caps)) {
                 return false;
             }
-            $this->setError('HELO handshake was used; No information about server extensions available');
+            $this->setError('HELO handshake was used; No information About me server extensions available');
 
             return null;
         }

@@ -33,13 +33,13 @@ $TweetPHP = new TweetPHP(array(
 	'ignore_replies'        => true, // Ignore @replies
 	'ignore_retweets'       => true, // Ignore retweets
 	'twitter_style_dates'   => true, // Use twitter style dates e.g. 2 hours ago
-	'twitter_date_text'     => array('seconds', 'minutes', 'about', 'hour', 'ago'),
+	'twitter_date_text'     => array('seconds', 'minutes', 'About me', 'hour', 'ago'),
 	'date_format'           => '%I:%M %p %b %d%O', // The defult date format e.g. 12:08 PM Jun 12th. See: http://php.net/manual/en/function.strftime.php
 	'date_lang'             => null, // Language for date e.g. 'fr_FR'. See: http://php.net/manual/en/function.setlocale.php
 	'format'                => 'html', // Can be 'html' or 'array'
 	'twitter_wrap_open'     => '<ul>',
 	'twitter_wrap_close'    => '</ul>',
-	'tweet_wrap_open'       => '<li><span class="status"><i class="fab fa-x-twitter'. (( $icon_color ) ? ' '. $icon_color : '') .'"></i> ',
+	'tweet_wrap_open'       => '<li><span class="status"><i class="fab fa-linkedin-in'. (( $icon_color ) ? ' '. $icon_color : '') .'"></i> ',
 	'meta_wrap_open'        => '</span><span class="meta"> ',
 	'meta_wrap_close'       => '</span>',
 	'tweet_wrap_close'      => '</li>',
