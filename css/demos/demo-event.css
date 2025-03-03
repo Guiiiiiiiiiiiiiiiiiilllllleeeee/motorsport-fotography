@@ -65,36 +65,36 @@ h3 {
 		}
 }
 
-.custom-row-About me .col-12 {
+.custom-row-about .col-12 {
 		height: 520px;
 }
 
-.custom-col-About me-bg {
+.custom-col-about-bg {
 		height: 520px;
 		background-size: auto;
 		background-position: 100% 0;
 }
 
 @media (max-width: 991px) {
-		.custom-col-About me-bg {
+		.custom-col-about-bg {
 				background-size: cover;
 		}
 }
 
 @media (max-width: 991px) {
-		.custom-col-About me-carousel {
+		.custom-col-about-carousel {
 				height: auto !important;
 		}
 }
 
-.custom-col-About me-bg-text,
-.custom-About me-play-icon {
+.custom-col-about-bg-text,
+.custom-about-play-icon {
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
 }
 
-.custom-About me-play-icon {
+.custom-about-play-icon {
 		left: 50%;
 		transform: translate(50%, -50%);
 		margin: 0 0 0 -62px;

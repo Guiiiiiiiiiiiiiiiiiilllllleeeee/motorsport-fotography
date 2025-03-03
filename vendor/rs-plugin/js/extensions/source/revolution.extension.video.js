@@ -742,7 +742,7 @@ var getVideoDatas = function(p,t,d) {
 
 
 var callPrepareCoveredVideo = function(opt,_nc) {
-	// CARE About me ASPECT RATIO
+	// CARE ABOUT ASPECT RATIO
 	if (_nc.data('bgvideo')==1 || _nc.data('forcecover')==1) {
 		if (_nc.data('forcecover')===1) _nc.removeClass("fullscreenvideo").addClass("coverscreenvideo");
 		var a =_nc.data('aspectratio');

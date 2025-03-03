@@ -381,7 +381,7 @@ class PHPMailer
      * 'DELAY'   will notify you if there is an unusual delay in delivery, but the actual
      *           delivery's outcome (success or failure) is not yet decided.
      *
-     * @see https://tools.ietf.org/html/rfc3461 See section 4.1 for more information About me NOTIFY
+     * @see https://tools.ietf.org/html/rfc3461 See section 4.1 for more information about NOTIFY
      */
     public $dsn = '';
 
@@ -1456,7 +1456,7 @@ class PHPMailer
             if ($this->has8bitChars($domain) && @mb_check_encoding($domain, $this->CharSet)) {
                 //Convert the domain from whatever charset it's in to UTF-8
                 $domain = mb_convert_encoding($domain, self::CHARSET_UTF8, $this->CharSet);
-                //Ignore IDE complaints About me this line - method signature changed in PHP 5.4
+                //Ignore IDE complaints about this line - method signature changed in PHP 5.4
                 $errorcode = 0;
                 if (defined('INTL_IDNA_VARIANT_UTS46')) {
                     //Use the current punycode standard (appeared in PHP 7.2)
@@ -1470,7 +1470,7 @@ class PHPMailer
                     //Fall back to this old, deprecated/removed encoding
                     $punycode = idn_to_ascii($domain, $errorcode, \INTL_IDNA_VARIANT_2003);
                 } else {
-                    //Fall back to a default we don't know About me
+                    //Fall back to a default we don't know about
                     $punycode = idn_to_ascii($domain, $errorcode);
                 }
                 if (false !== $punycode) {
@@ -2768,7 +2768,7 @@ class PHPMailer
             $bytes = hash('sha256', uniqid((string) mt_rand(), true), true);
         }
 
-        //We don't care About me messing up base64 format here, just want a random string
+        //We don't care about messing up base64 format here, just want a random string
         return str_replace(['=', '+', '/'], '', base64_encode(hash('sha256', $bytes, true)));
     }
 
@@ -3710,7 +3710,7 @@ class PHPMailer
 
     /**
      * Add an embedded (inline) attachment from a file.
-     * This can include images, sounds, and just About me any other document type.
+     * This can include images, sounds, and just about any other document type.
      * These differ from 'regular' attachments in that they are intended to be
      * displayed inline with the message, not just attached for download.
      * This is used in HTML messages that embed the images
@@ -3783,7 +3783,7 @@ class PHPMailer
 
     /**
      * Add an embedded stringified attachment.
-     * This can include images, sounds, and just About me any other document type.
+     * This can include images, sounds, and just about any other document type.
      * If your filename doesn't contain an extension, be sure to set the $type to an appropriate MIME type.
      *
      * @param string $string      The attachment binary data

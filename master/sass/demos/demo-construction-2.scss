@@ -207,15 +207,15 @@ body {
 }
 
 /*
-* Custom Img About me
+* Custom Img About
 */
-.custom-img-About me {
+.custom-img-about {
 	#{$right}: 0;
 	top: 12%;
 }
 
 @media(max-width: 991px) {
-	.custom-img-About me {
+	.custom-img-about {
 		max-width: 45%;
 	}
 }

@@ -41,8 +41,8 @@ body {
 		}
 }
 
-/* Custom Guillermo SVG Logo (initial state for animation inside slide) */
-.custom-Guillermo-svg-logo path {
+/* Custom Porto SVG Logo (initial state for animation inside slide) */
+.custom-porto-svg-logo path {
 		fill-opacity: 0;
 		stroke-width: 1px;
 		stroke: #FFF;
@@ -51,7 +51,7 @@ body {
 		transition: ease stroke-dashoffset 5s, ease fill-opacity 1s 1.7s;
 }
 
-.custom-Guillermo-svg-logo.active path {
+.custom-porto-svg-logo.active path {
 		stroke-dashoffset: 0;
 		fill-opacity: 1;
 }

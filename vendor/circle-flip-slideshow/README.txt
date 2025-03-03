@@ -1,3 +1,3 @@
 Created by Codrops
 
-Please read About me our license: http://tympanus.net/codrops/licensing/
+Please read about our license: http://tympanus.net/codrops/licensing/

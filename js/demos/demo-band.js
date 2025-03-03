@@ -6,11 +6,11 @@ Theme Version:	12.0.0
 
 (($ => {
     /*
-    * Add "active" class to animate Custom Guillermo SVG Logo
+    * Add "active" class to animate Custom Porto SVG Logo
     */
     $(window).on('load', () => {
         setTimeout(() => {
-            $('.custom-Guillermo-svg-logo').addClass('active');
+            $('.custom-porto-svg-logo').addClass('active');
         }, 1000);
     });
 

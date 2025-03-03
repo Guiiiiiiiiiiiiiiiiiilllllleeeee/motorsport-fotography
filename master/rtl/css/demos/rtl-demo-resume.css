@@ -394,31 +394,31 @@ section.section {
 }
 
 /*
-* About me Me
+* About Me
 */
-.About me-me-more {
+.about-me-more {
 	display: none;
 }
 
-.About me-me-more.About me-me-more-visible {
+.about-me-more.about-me-more-visible {
 	display: block;
 }
 
-.custom-About me-me-infos span {
+.custom-about-me-infos span {
 	display: block;
 }
 
 @media (max-width: 767px) {
-	.custom-About me-me-infos span {
+	.custom-about-me-infos span {
 		font-size: 0.9em;
 	}
 }
 
-.custom-About me-me-links {
+.custom-about-me-links {
 	position: relative;
 }
 
-.custom-About me-me-links:after {
+.custom-about-me-links:after {
 	content: '';
 	display: block;
 	position: absolute;
@@ -430,13 +430,13 @@ section.section {
 }
 
 @media (max-width: 991px) {
-	.custom-About me-me-links:after {
+	.custom-about-me-links:after {
 		width: 100vw;
 	}
 }
 
 @media (max-width: 767px) {
-	.custom-About me-me-links > .container {
+	.custom-about-me-links > .container {
 		max-width: none;
 	}
 }

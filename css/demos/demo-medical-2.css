@@ -246,9 +246,9 @@ body {
 }
 
 /*
-* About me Me
+* About Me
 */
-.more-About me {
+.more-about {
 		background-color: var(--light);
 		background-position-y: center;
 		background-repeat: no-repeat;
@@ -260,7 +260,7 @@ body {
 }
 
 @media (max-width: 991px) {
-		.more-About me {
+		.more-about {
 				padding-top: 70%;
 				position: static;
 				background-size: 100%;
@@ -272,7 +272,7 @@ body {
 }
 
 @media (min-width: 992px) {
-		.more-About me .col-cuttin-more-About me:before {
+		.more-about .col-cuttin-more-about:before {
 				content: '';
 				position: absolute;
 				top: -35%;
@@ -283,7 +283,7 @@ body {
 				z-index: 0;
 				transform: rotate(75deg);
 		}
-		.more-About me .col-cuttin-more-About me:after {
+		.more-about .col-cuttin-more-about:after {
 				content: '';
 				position: absolute;
 				top: 35%;
@@ -297,14 +297,14 @@ body {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-		.more-About me {
+		.more-about {
 				background-size: 130%;
 		}
-		.more-About me .col-cuttin-more-About me:before {
+		.more-about .col-cuttin-more-about:before {
 				right: -127%;
 				top: -38%;
 		}
-		.more-About me .col-cuttin-more-About me:after {
+		.more-about .col-cuttin-more-about:after {
 				right: -127%;
 				top: 38%;
 		}

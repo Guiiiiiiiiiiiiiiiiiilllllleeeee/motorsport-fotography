@@ -1,5 +1,5 @@
 /**
- * Copyright 2016 Google Inc. Derechos reservados
+ * Copyright 2016 Google Inc. All Rights Reserved.
  *
  * Licensed under the W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE.
  *

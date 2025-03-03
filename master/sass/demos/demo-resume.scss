@@ -479,30 +479,30 @@ section.section {
 }
 
 /*
-* About me Me
+* About Me
 */
-.About me-me-more {
+.about-me-more {
 	display: none;
-	&.About me-me-more-visible {
+	&.about-me-more-visible {
 		display: block;
 	}
 }
 
-.custom-About me-me-infos {
+.custom-about-me-infos {
 	span {
 		display: block;
 	}
 }
 
 @media (max-width: 767px) {
-	.custom-About me-me-infos {
+	.custom-about-me-infos {
 		span {
 			font-size: 0.9em;
 		}
 	}
 }
 
-.custom-About me-me-links {
+.custom-about-me-links {
 	position: relative;
 
 	&:after {
@@ -518,7 +518,7 @@ section.section {
 }
 
 @media (max-width: 991px) {
-	.custom-About me-me-links {
+	.custom-about-me-links {
 		&:after {
 			width: 100vw;
 		}
@@ -526,7 +526,7 @@ section.section {
 }
 
 @media (max-width: 767px) {
-	.custom-About me-me-links {
+	.custom-about-me-links {
 		> .container {
 			max-width: none;
 		}

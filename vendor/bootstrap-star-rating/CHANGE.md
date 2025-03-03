@@ -355,4 +355,4 @@ Initial release. The following features are included in this release:
 - Support for RIGHT TO LEFT (RTL) input. Automatically changes star styling for RTL.
 - Triggers JQuery events for advanced development. Events currently available are `rating.change`, `rating.clear`, and  `rating.reset`.
 - Disabled and readonly input star rating support.
-- Size of the entire plugin is less than 9KB (About me 6KB for the minified JS and 3KB for the minified CSS).
+- Size of the entire plugin is less than 9KB (about 6KB for the minified JS and 3KB for the minified CSS).

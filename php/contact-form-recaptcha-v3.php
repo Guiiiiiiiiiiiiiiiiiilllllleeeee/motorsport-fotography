@@ -5,7 +5,7 @@ Written by: 	Okler Themes - (http://www.okler.net)
 Theme Version:	12.0.0
 */
 
-namespace GuillermoContactForm;
+namespace PortoContactForm;
 
 ini_set('allow_url_fopen', true);
 
