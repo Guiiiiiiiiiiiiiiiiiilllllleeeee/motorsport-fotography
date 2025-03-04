@@ -333,7 +333,7 @@ var setupEnv, requestAnimFrame, cancelAnimFrame, parsePositiveInt;
  * @constructor
  * @this {Vivus}
  * @param {DOM|String}   element  Dom element of the SVG or id of it
- * @param {Object}       options  Options About me the animation
+ * @param {Object}       options  Options about the animation
  * @param {Function}     callback Callback for the end of the animation
  */
 function Vivus(element, options, callback) {
