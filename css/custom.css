@@ -1,58 +1,683 @@
-::-webkit-scrollbar {
-    display: none;
-}
-/* From Uiverse.io by adamgiebl */ 
-button {
-    font-family: inherit;
+/* before adding the img to the div with the 
+"card-img" class, remove css styles 
+.card-img .img::before and .card-img .img::after,
+then set the desired styles for .card-img. */
+.card {
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --main-color: #323232;
+    --main-focus: #2d8cf0;
+    width: 230px;
+    height: 300px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .card:last-child {
+    justify-content: flex-end;
+  }
+  
+  .card-img {
+      /* clear and add new css */
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-img .img {
+   /* delete */
+    transform: scale(1);
+    position: relative;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 80px 50px;
+    border-top-right-radius: 80px 50px;
+    border: 2px solid black;
+    background-color: #228b22;
+    background-image: linear-gradient(to top,transparent 10px,rgba(0,0,0,0.3) 10px,rgba(0,0,0,0.3) 13px,transparent 13px);
+  }
+  
+  .card-img .img::before {
+   /* delete */
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 110px;
+    margin-left: -32.5px;
+    left: 50%;
+    bottom: -4px;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(ellipse at center,rgba(0,0,0,0.7) 30%,transparent 30%),linear-gradient(to top,transparent 17px,rgba(0,0,0,0.3) 17px,rgba(0,0,0,0.3) 20px,transparent 20px),linear-gradient(to right,black 2px,transparent 2px),linear-gradient(to left,black 2px,transparent 2px),linear-gradient(to top,black 2px,#228b22 2px);
+    background-size: 60% 10%,100% 100%,100% 65%,100% 65%,100% 50%;
+    background-position: center 3px,center bottom,center bottom,center bottom,center bottom;
+    border-radius: 0 0 4px 4px;
+    z-index: 2;
+  }
+  
+  .card-img .img::after {
+   /* delete */
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+    margin-left: -14px;
+    left: 50%;
+    top: -13px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(80deg,#ffc0cb 45%,transparent 45%),linear-gradient(-175deg,#ffc0cb 45%,transparent 45%),linear-gradient(80deg,rgba(0,0,0,0.2) 51%,rgba(0,0,0,0) 51%),linear-gradient(-175deg,rgba(0,0,0,0.2) 51%,rgba(0,0,0,0) 51%),radial-gradient(circle at center,#ffa6b6 45%,rgba(0,0,0,0.2) 45%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 52%),linear-gradient(45deg,rgba(0,0,0,0) 48%,rgba(0,0,0,0.2) 48%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 52%),linear-gradient(65deg,rgba(0,0,0,0) 48%,rgba(0,0,0,0.2) 48%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 52%),linear-gradient(22deg,rgba(0,0,0,0) 48%,rgba(0,0,0,0.2) 48%,rgba(0,0,0,0.2) 54%,rgba(0,0,0,0) 54%);
+    background-size: 100% 100%,100% 100%,100% 100%,100% 100%,100% 100%,100% 75%,100% 95%,100% 60%;
+    background-position: center center;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 70px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+  
+  .card-title {
     font-size: 20px;
-    background: orange;
-    color: white;
-    padding: 0.7em 1em;
-    padding-left: 0.9em;
+    font-weight: 500;
+    text-align: center;
+    color: var(--font-color);
+  }
+  
+  .card-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--font-color-sub);
+  }
+  
+  .card-divider {
+    width: 100%;
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+  }
+  
+  .card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-price {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--font-color);
+  }
+  
+  .card-price span {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--font-color-sub);
+  }
+  
+  .card-btn {
+    height: 35px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    padding: 0 15px;
+    transition: all 0.3s;
+  }
+  
+  .card-btn svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--main-color);
+    transition: all 0.3s;
+  }
+  
+  .card-img:hover {
+    transform: translateY(-3px);
+  }
+  
+  .card-btn:hover {
+    border: 2px solid var(--main-focus);
+  }
+  
+  .card-btn:hover svg {
+    fill: var(--main-focus);
+  }
+  
+  .card-btn:active {
+    transform: translateY(3px);
+  }
+  
+/* From Uiverse.io by andrew-demchenk0 */ 
+/* before adding the img to the div with the 
+"card-img" class, remove css styles 
+.card-img .img::before and .card-img .img::after,
+then set the desired styles for .card-img. */
+#elementos-tarjeta .card {
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --main-color: #323232;
+    --main-focus: #2d8cf0;
+    width: 230px;
+    height: 300px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  #elementos-tarjeta .card:last-child {
+    justify-content: flex-end;
+  }
+  
+  #elementos-tarjeta .card-img {
+      /* clear and add new css */
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #elementos-tarjeta .card-img .img {
+   /* delete */
+    transform: scale(1);
+    position: relative;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 80px 50px;
+    border-top-right-radius: 80px 50px;
+    border: 2px solid black;
+    background-color: #228b22;
+    background-image: linear-gradient(to top,transparent 10px,rgba(0,0,0,0.3) 10px,rgba(0,0,0,0.3) 13px,transparent 13px);
+  }
+  
+  #elementos-tarjeta .card-img .img::before {
+   /* delete */
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 110px;
+    margin-left: -32.5px;
+    left: 50%;
+    bottom: -4px;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(ellipse at center,rgba(0,0,0,0.7) 30%,transparent 30%),linear-gradient(to top,transparent 17px,rgba(0,0,0,0.3) 17px,rgba(0,0,0,0.3) 20px,transparent 20px),linear-gradient(to right,black 2px,transparent 2px),linear-gradient(to left,black 2px,transparent 2px),linear-gradient(to top,black 2px,#228b22 2px);
+    background-size: 60% 10%,100% 100%,100% 65%,100% 65%,100% 50%;
+    background-position: center 3px,center bottom,center bottom,center bottom,center bottom;
+    border-radius: 0 0 4px 4px;
+    z-index: 2;
+  }
+  
+  #elementos-tarjeta .card-img .img::after {
+   /* delete */
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+    margin-left: -14px;
+    left: 50%;
+    top: -13px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(80deg,#ffc0cb 45%,transparent 45%),linear-gradient(-175deg,#ffc0cb 45%,transparent 45%),linear-gradient(80deg,rgba(0,0,0,0.2) 51%,rgba(0,0,0,0) 51%),linear-gradient(-175deg,rgba(0,0,0,0.2) 51%,rgba(0,0,0,0) 51%),radial-gradient(circle at center,#ffa6b6 45%,rgba(0,0,0,0.2) 45%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 52%),linear-gradient(45deg,rgba(0,0,0,0) 48%,rgba(0,0,0,0.2) 48%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 52%),linear-gradient(65deg,rgba(0,0,0,0) 48%,rgba(0,0,0,0.2) 48%,rgba(0,0,0,0.2) 52%,rgba(0,0,0,0) 52%),linear-gradient(22deg,rgba(0,0,0,0) 48%,rgba(0,0,0,0.2) 48%,rgba(0,0,0,0.2) 54%,rgba(0,0,0,0) 54%);
+    background-size: 100% 100%,100% 100%,100% 100%,100% 100%,100% 100%,100% 75%,100% 95%,100% 60%;
+    background-position: center center;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 70px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+  
+  #elementos-tarjeta .card-title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--font-color);
+  }
+  
+  #elementos-tarjeta .card-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--font-color-sub);
+  }
+  
+  #elementos-tarjeta .card-divider {
+    width: 100%;
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+  }
+  
+  #elementos-tarjeta .card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #elementos-tarjeta .card-price {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--font-color);
+  }
+  
+  #elementos-tarjeta .card-price span {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--font-color-sub);
+  }
+  
+  #elementos-tarjeta .card-btn {
+    height: 35px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    padding: 0 15px;
+    transition: all 0.3s;
+  }
+  
+  #elementos-tarjeta .card-btn svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--main-color);
+    transition: all 0.3s;
+  }
+  
+  #elementos-tarjeta .card-img:hover {
+    transform: translateY(-3px);
+  }
+  
+  #elementos-tarjeta .card-btn:hover {
+    border: 2px solid var(--main-focus);
+  }
+  
+  #elementos-tarjeta .card-btn:hover svg {
+    fill: var(--main-focus);
+  }
+  
+#elementos-tarjeta .card-btn:active {
+    transform: translateY(3px);
+  }
+/* Grid layout for cards */
+#elementos-tarjeta.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Product image styling */
+#elementos-tarjeta .card-img {
+    height: 120px;
     display: flex;
     align-items: center;
-    border: none;
-    border-radius: 16px;
+    justify-content: center;
     overflow: hidden;
-    transition: all 0.2s;
+}
+
+#elementos-tarjeta .product-image {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+#elementos-tarjeta .card:hover .product-image {
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    #elementos-tarjeta.card-grid {
+        justify-content: center;
+    }
+    
+    #elementos-tarjeta .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Improved button hover effect */
+#elementos-tarjeta .card-btn:hover {
+    background-color: var(--main-color);
     cursor: pointer;
+}
+
+#elementos-tarjeta .card-btn:hover svg {
+    fill: var(--bg-color);
+}
+/* From Uiverse.io by satyamchaudharydev */ 
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(0, 0, 0, 0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+} 
+/* From Uiverse.io by david-mohseni */ 
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+#red-social {
+  margin-right: 22%;
+}
+#mobile-menu{
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  #red-social {
+    display: none;
   }
-  
-  button span {
+  #mobile-menu{
     display: block;
-    margin-left: 0.3em;
-    transition: all 0.3s ease-in-out;
   }
-  
-  button svg {
-    display: block;
-    transform-origin: center center;
-    transition: transform 0.3s ease-in-out;
+}
+/* From Uiverse.io by adamgiebl */ 
+#button2 {
+  font-family: inherit;
+  font-size: 20px;
+  background: black;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#button2 span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+#button2 svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+#button2:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+#button2:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+#button2:hover span {
+  transform: translateX(5em);
+}
+
+#button2:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
   }
-  
-  button:hover .svg-wrapper {
-    animation: fly-1 0.6s ease-in-out infinite alternate;
+
+  to {
+    transform: translateY(-0.1em);
   }
-  
-  button:hover svg {
-    transform: translateX(1.2em) rotate(45deg) scale(1.1);
-  }
-  
-  button:hover span {
-    transform: translateX(5em);
-  }
-  
-  button:active {
-    transform: scale(0.95);
-  }
-  
-  @keyframes fly-1 {
-    from {
-      transform: translateY(0.1em);
-    }
-  
-    to {
-      transform: translateY(-0.1em);
-    }
-  }
-  
+}
+/* From Uiverse.io by gagan-gv */ 
+.btn {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  background-color: #eeeeed;
+  border-radius: 80px;
+  border: none;
+  padding: 0 80px;
+  transition: all .2s ease;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ .btn:hover {
+  transform: scale(1.1);
+ }
+ 
+ .btn span {
+  position: absolute;
+  z-index: 99;
+  width: 150px;
+  height: 50px;
+  border-radius: 80px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: #eeeeed;
+  background-color: #1f1f1f;
+  padding: 0 10px;
+  transition: all 1.2s ease;
+ }
+ 
+ .btn .container {
+  display: flex;
+  width: 150px;
+  border-radius: 80px;
+  line-height: 50px;
+ }
+ 
+ .btn svg {
+  padding: 0 5px;
+  opacity: 0;
+ }
+ 
+ .btn .container svg:nth-of-type(1) {
+  transition-delay: 0.65s;
+ }
+ 
+ .btn .container svg:nth-of-type(2) {
+  transition-delay: 0.8s;
+ }
+ 
+ .container svg:nth-of-type(3) {
+  transition-delay: 0.5s;
+ }
+ 
+ .btn:hover span {
+  opacity: 0;
+ }
+ 
+ .btn:hover svg {
+  opacity: 1;
+ }
+ /* From Uiverse.io by gagan-gv */ 
+#menu-redesociales {
+  height: 4em;
+  width: 15em;
+  border: none;
+  border-radius: 40px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#menu-redesociales span {
+  z-index: 1;
+  display: inline-block;
+  background-color: black;
+  height: 3em;
+  width: 11.5em;
+  border-radius: 25px;
+  color: #fff;
+  line-height: 55px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  transition: all 0.5s;
+}
+
+#menu-redesociales .container {
+  z-index: -1;
+  width: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-50px);
+  transition: all 0.4s;
+}
+
+#menu-redesociales .container svg {
+  padding: 0 10px;
+}
+
+#menu-redesociales:hover span {
+  width: 0;
+}
+
+#menu-redesociales:hover .container {
+  z-index: 2;
+  width: 100%;
+}
