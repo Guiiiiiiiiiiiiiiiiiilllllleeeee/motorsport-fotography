@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/ariona/hover3d/master/hover3d.png" width=150 height=121 align="right" alt="">
+<img src="https://raw.githubusercontent.com/ariona/hover3d/master/hover3d.png" width=150 height=121 align="right" alt="photography"										>
 
 # jQuery Hover3d
 
